@@ -1,6 +1,5 @@
-flask
+streamlit
 tensorflow
+pandas
+joblib
 scikit-learn
-numpy
-gunicorn
-
