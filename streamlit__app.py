@@ -1,224 +1,128 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "8a35ca89-cfe5-413e-a28b-2c7cd9a6042f",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2025-04-28 16:42:30.873 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:30.882 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:33.839 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run C:\\Users\\USER\\.anaconda\\envs\\Tf-New\\lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
-      "2025-04-28 16:42:33.839 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:33.841 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:34.345 Thread 'Thread-3': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:34.356 Thread 'Thread-3': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.201 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.202 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.203 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.205 Session state does not function when running a script without `streamlit run`\n",
-      "2025-04-28 16:42:37.206 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.207 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.208 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.216 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.218 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.219 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.223 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.226 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.229 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.231 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.235 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.237 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.240 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.243 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.248 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.250 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.252 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.253 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.254 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.268 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.272 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.277 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.282 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.284 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.286 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.288 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.289 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.292 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.298 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-04-28 16:42:37.300 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
-     ]
-    }
-   ],
-   "source": [
-    "# streamlit_app.py\n",
-    "\n",
-    "import streamlit as st\n",
-    "import pandas as pd\n",
-    "import json\n",
-    "import os\n",
-    "import tensorflow as tf\n",
-    "import joblib\n",
-    "\n",
-    "# --- Set page configuration (must be first Streamlit command)\n",
-    "st.set_page_config(page_title=\"User Behavior & Traffic Prediction\", page_icon=\"🚀\", layout=\"wide\")\n",
-    "\n",
-    "# --- Load Models\n",
-    "@st.cache_resource\n",
-    "def load_models():\n",
-    "    model_m1 = tf.keras.models.load_model('M1_model.h5')\n",
-    "    model_m9 = tf.keras.models.load_model('M9_model.h5')\n",
-    "    traffic_model = joblib.load('TrafficPrediction.pkl')\n",
-    "    return model_m1, model_m9, traffic_model\n",
-    "\n",
-    "model_m1, model_m9, traffic_model = load_models()\n",
-    "\n",
-    "# --- User management functions\n",
-    "USERS_FILE = 'Users.json'\n",
-    "\n",
-    "def load_users():\n",
-    "    if not os.path.exists(USERS_FILE):\n",
-    "        return {}\n",
-    "    with open(USERS_FILE, 'r') as f:\n",
-    "        return json.load(f)\n",
-    "\n",
-    "def save_users(users):\n",
-    "    with open(USERS_FILE, 'w') as f:\n",
-    "        json.dump(users, f)\n",
-    "\n",
-    "def signup(username, password):\n",
-    "    users = load_users()\n",
-    "    if username in users:\n",
-    "        return False\n",
-    "    users[username] = password\n",
-    "    save_users(users)\n",
-    "    return True\n",
-    "\n",
-    "def login(username, password):\n",
-    "    users = load_users()\n",
-    "    return users.get(username) == password\n",
-    "\n",
-    "# --- Initialize session state\n",
-    "if 'logged_in' not in st.session_state:\n",
-    "    st.session_state.logged_in = False\n",
-    "\n",
-    "if 'page' not in st.session_state:\n",
-    "    st.session_state.page = 'login'\n",
-    "\n",
-    "# --- Pages logic\n",
-    "if st.session_state.page == 'login':\n",
-    "    st.title(\"Login\")\n",
-    "    username = st.text_input(\"Username\")\n",
-    "    password = st.text_input(\"Password\", type=\"password\")\n",
-    "    \n",
-    "    if st.button(\"Login\"):\n",
-    "        if login(username, password):\n",
-    "            st.session_state.logged_in = True\n",
-    "            st.success(\"Logged in successfully!\")\n",
-    "            st.session_state.page = 'upload'\n",
-    "            st.experimental_rerun()\n",
-    "        else:\n",
-    "            st.error(\"Incorrect username or password.\")\n",
-    "\n",
-    "    if st.button(\"Create New Account\"):\n",
-    "        st.session_state.page = 'signup'\n",
-    "        st.experimental_rerun()\n",
-    "\n",
-    "elif st.session_state.page == 'signup':\n",
-    "    st.title(\"Create New Account\")\n",
-    "    new_username = st.text_input(\"New Username\")\n",
-    "    new_password = st.text_input(\"New Password\", type=\"password\")\n",
-    "    \n",
-    "    if st.button(\"Sign Up\"):\n",
-    "        if signup(new_username, new_password):\n",
-    "            st.success(\"Account created successfully!\")\n",
-    "            st.session_state.page = 'login'\n",
-    "            st.experimental_rerun()\n",
-    "        else:\n",
-    "            st.error(\"Username already exists. Try another one.\")\n",
-    "    \n",
-    "    if st.button(\"Back to Login\"):\n",
-    "        st.session_state.page = 'login'\n",
-    "        st.experimental_rerun()\n",
-    "\n",
-    "elif st.session_state.logged_in and st.session_state.page == 'upload':\n",
-    "    st.title(\"Upload Files for Prediction\")\n",
-    "    st.info(\"Please upload 3 files: Bundle 1, Bundle 2, and Traffic\")\n",
-    "\n",
-    "    uploaded_files = st.file_uploader(\"Upload your 3 files\", accept_multiple_files=True, type=['csv'])\n",
-    "\n",
-    "    if uploaded_files and len(uploaded_files) == 3:\n",
-    "        try:\n",
-    "            df1 = pd.read_csv(uploaded_files[0])\n",
-    "            df2 = pd.read_csv(uploaded_files[1])\n",
-    "            df3 = pd.read_csv(uploaded_files[2])\n",
-    "\n",
-    "            # Predictions\n",
-    "            pred1 = model_m1.predict(df1)\n",
-    "            pred2 = model_m9.predict(df2)\n",
-    "            pred3 = traffic_model.predict(df3)\n",
-    "\n",
-    "            # Simple average combination\n",
-    "            final_prediction = (pred1.flatten() + pred2.flatten() + pred3.flatten()) / 3\n",
-    "\n",
-    "            # Display predictions\n",
-    "            st.subheader(\"Predictions\")\n",
-    "            prediction_df = pd.DataFrame({\n",
-    "                \"Bundle 1 Prediction\": pred1.flatten(),\n",
-    "                \"Bundle 2 Prediction\": pred2.flatten(),\n",
-    "                \"Traffic Prediction\": pred3.flatten(),\n",
-    "                \"Final Combined Prediction\": final_prediction\n",
-    "            })\n",
-    "            st.dataframe(prediction_df)\n",
-    "\n",
-    "            # Download button\n",
-    "            csv = prediction_df.to_csv(index=False).encode('utf-8')\n",
-    "            st.download_button(\"Download Predictions as CSV\", csv, \"predictions.csv\", \"text/csv\")\n",
-    "\n",
-    "        except Exception as e:\n",
-    "            st.error(f\"Error during prediction: {e}\")\n",
-    "    else:\n",
-    "        st.warning(\"Please upload exactly 3 files.\")\n",
-    "\n",
-    "# --- End of app\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": None,
-   "id": "d6695fda-f18c-4bb5-9af7-7cbdcb5b589e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.9.18"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# streamlit_app.py
+
+import streamlit as st
+import pandas as pd
+import json
+import os
+import tensorflow as tf
+import joblib
+
+# --- Set page configuration
+st.set_page_config(page_title="User Behavior & Traffic Prediction", page_icon="🚀", layout="wide")
+
+# --- Load Models
+@st.cache_resource
+def load_models():
+    model_m1 = tf.keras.models.load_model('M1_model.h5')
+    model_m9 = tf.keras.models.load_model('M9_model.h5')
+    traffic_model = joblib.load('TrafficPrediction.pkl')
+    return model_m1, model_m9, traffic_model
+
+model_m1, model_m9, traffic_model = load_models()
+
+# --- User management
+USERS_FILE = 'Users.json'
+
+def load_users():
+    if not os.path.exists(USERS_FILE):
+        return {}
+    with open(USERS_FILE, 'r') as f:
+        return json.load(f)
+
+def save_users(users):
+    with open(USERS_FILE, 'w') as f:
+        json.dump(users, f)
+
+def signup(username, password):
+    users = load_users()
+    if username in users:
+        return False
+    users[username] = password
+    save_users(users)
+    return True
+
+def login(username, password):
+    users = load_users()
+    return users.get(username) == password
+
+# --- Initialize session state
+if 'logged_in' not in st.session_state:
+    st.session_state.logged_in = False
+
+if 'page' not in st.session_state:
+    st.session_state.page = 'login'
+
+# --- Pages
+if st.session_state.page == 'login':
+    st.title("Login")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+
+    if st.button("Login"):
+        if login(username, password):
+            st.session_state.logged_in = True
+            st.success("Logged in successfully!")
+            st.session_state.page = 'upload'
+            st.experimental_rerun()
+        else:
+            st.error("Incorrect username or password.")
+
+    if st.button("Create New Account"):
+        st.session_state.page = 'signup'
+        st.experimental_rerun()
+
+elif st.session_state.page == 'signup':
+    st.title("Create New Account")
+    new_username = st.text_input("New Username")
+    new_password = st.text_input("New Password", type="password")
+
+    if st.button("Sign Up"):
+        if signup(new_username, new_password):
+            st.success("Account created successfully!")
+            st.session_state.page = 'login'
+            st.experimental_rerun()
+        else:
+            st.error("Username already exists. Try another one.")
+
+    if st.button("Back to Login"):
+        st.session_state.page = 'login'
+        st.experimental_rerun()
+
+elif st.session_state.logged_in and st.session_state.page == 'upload':
+    st.title("Upload Files for Prediction")
+    st.info("Please upload 3 files: Bundle 1, Bundle 2, and Traffic")
+
+    uploaded_files = st.file_uploader("Upload your 3 files", accept_multiple_files=True, type=['csv'])
+
+    if uploaded_files and len(uploaded_files) == 3:
+        try:
+            df1 = pd.read_csv(uploaded_files[0])
+            df2 = pd.read_csv(uploaded_files[1])
+            df3 = pd.read_csv(uploaded_files[2])
+
+            # Predictions
+            pred1 = model_m1.predict(df1)
+            pred2 = model_m9.predict(df2)
+            pred3 = traffic_model.predict(df3)
+
+            # Average combination
+            final_prediction = (pred1.flatten() + pred2.flatten() + pred3.flatten()) / 3
+
+            # Display
+            st.subheader("Predictions")
+            prediction_df = pd.DataFrame({
+                "Bundle 1 Prediction": pred1.flatten(),
+                "Bundle 2 Prediction": pred2.flatten(),
+                "Traffic Prediction": pred3.flatten(),
+                "Final Combined Prediction": final_prediction
+            })
+            st.dataframe(prediction_df)
+
+            # Download button
+            csv = prediction_df.to_csv(index=False).encode('utf-8')
+            st.download_button("Download Predictions as CSV", csv, "predictions.csv", "text/csv")
+
+        except Exception as e:
+            st.error(f"Error during prediction: {e}")
+    else:
+        st.warning("Please upload exactly 3 files.")
